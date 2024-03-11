@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "google", tagId: "G-LMSG0JHBFB",
     },
-    baseUrl: "www.ishan.coffee",
+    baseUrl: "https://saisur.info/blog",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
