@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Tannhäuser Gate</title>
+      <link>https://www.ishan.coffee</link>
+      <description>Last 10 notes on Tannhäuser Gate</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Gallery</title>
+    <link>https://www.ishan.coffee/gallery</link>
+    <guid>https://www.ishan.coffee/gallery</guid>
+    <description>Collection of my favorite pictures Ong-Ard Satrabhandhu is a Thai architect whose work is known for its masterful combination of classical principles and traditional Thai qualities Puppies, by Maruyama Ōkyo, ca.</description>
+    <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Eternal Horizons</title>
+    <link>https://www.ishan.coffee/</link>
+    <guid>https://www.ishan.coffee/</guid>
+    <description> A fault in the space-time continuum where two normally distant points of space touch one another Welcome to my blog, I will mainly talk about the NLP, Complexity Theory, modern-day Hindutva’s deontological ethics, lack of meaning in a world approaching AGI and computational search problems.</description>
+    <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Sci-Fi Books</title>
+    <link>https://www.ishan.coffee/notes/Books</link>
+    <guid>https://www.ishan.coffee/notes/Books</guid>
+    <description> The Last Question – Isaac Asimov The Three Body Problem Accelerando Manna two worlds Snow crash The hitchhiker’s guide to the galaxy Story of your life – Ted Chiang This is how you lose the time war Exhalation – Ted Chiang Understand – Ted Chiang Flowers for Algernon Atlas shrugged Superintelligence .</description>
+    <pubDate>Sat, 28 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Idea List</title>
+    <link>https://www.ishan.coffee/notes/Idea-List</link>
+    <guid>https://www.ishan.coffee/notes/Idea-List</guid>
+    <description>Open ideas, if you would want to collaborate on any of these, please let me know. Light L16 stiching algorithm Replace the method of laplacian blending with a more advanced method.</description>
+    <pubDate>Wed, 04 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Internet Gems</title>
+    <link>https://www.ishan.coffee/notes/Internet-Gems</link>
+    <guid>https://www.ishan.coffee/notes/Internet-Gems</guid>
+    <description>PowerPoint Programming: https://youtu.be/_3loq22TxSc?si=2fth674yzFu0Wa-X Project Greyball: https://www.nytimes.com/2017/03/03/technology/uber-greyball-program-evade-authorities.</description>
+    <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Library</title>
+    <link>https://www.ishan.coffee/notes/Library</link>
+    <guid>https://www.ishan.coffee/notes/Library</guid>
+    <description>Have a nice read, hope you find something you like :) Recs § Podcasts Programming § Cool Tools Studying § Textbooks Courses .</description>
+    <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Linear Algebra</title>
+    <link>https://www.ishan.coffee/notes/Linear-Algebra</link>
+    <guid>https://www.ishan.coffee/notes/Linear-Algebra</guid>
+    <description> The manga guide to linear algebra: https://web.math.ucsb.edu/~jerryluo8/teaching/Fall2018-4A/The%20Manga%20Guide%20to%20Linear%20Algebra.pdf .</description>
+    <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Manifesto</title>
+    <link>https://www.ishan.coffee/notes/Manifesto</link>
+    <guid>https://www.ishan.coffee/notes/Manifesto</guid>
+    <description>Strong beliefs, weakly held: You should be extremely passionate about something or seek to find a passion. Most people who are experts in a field are experts in many field, e.</description>
+    <pubDate>Fri, 20 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Podcasts</title>
+    <link>https://www.ishan.coffee/notes/Podcasts</link>
+    <guid>https://www.ishan.coffee/notes/Podcasts</guid>
+    <description> Stanford MLSys Seminar How I Built This 80,000 Hours Deep Papers Dwarkesh Podcast Latent Space Machine Learning Street Talk Gradient Dissent How I Built This Greymatter .</description>
+    <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Productivity Stack</title>
+    <link>https://www.ishan.coffee/notes/Productivity-Stack</link>
+    <guid>https://www.ishan.coffee/notes/Productivity-Stack</guid>
+    <description>My current productivity stack: Roam Research .</description>
+    <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
