@@ -44,7 +44,8 @@ All real numbers are usually written as $A + Bi$, the same way matrix can be wri
 
 Example:
 
-$$ \begin{bmatrix}
+$$
+\begin{bmatrix}
 6 & 2+3i \\
 18-2i & 4i
 \end{bmatrix}
@@ -70,7 +71,8 @@ Also remember that $$\lambda _1 \geq \lambda _2 \geq \cdots \geq \lambda _n $$
 
 Example:
 
-$$ \begin{bmatrix}
+$$ 
+\begin{bmatrix}
 2 & 1-i \\
 1+i & 3
 \end{bmatrix}
@@ -193,7 +195,8 @@ surmise): the eigenvalues of random matrices generically repel each other, while
 not have this property. This is a very important property of the eigenvalues of a random matrix.
 
 For the standard normal $R^3$ we get these correlation values:
-$$ \begin{bmatrix}
+$$ 
+\begin{bmatrix}
 1 & -0.5988 &  -0.6256\\
 -0.59881399 & 1. & 0.43375837 \\
 -0.62568476 & 0.43375837 & 1. 
