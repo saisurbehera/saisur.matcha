@@ -179,8 +179,9 @@ plt.xlabel('Scaled Eigenvalue')
 plt.ylabel('Density')
 plt.title('Comparison of Scaled Eigenvalue Densities')
 plt.show()
-
 ```
+
+
 
 Before Normalization
 ![alt text](image-4.png)

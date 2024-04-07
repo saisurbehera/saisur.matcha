@@ -59,6 +59,8 @@ $$
 One obtains
 
 
-$$p(s) = \frac{1}{8\pi^{3/2}} \int_0^\infty dr r \delta(s - r) \int_0^{2\pi} d\theta \int_{-\infty}^\infty d\psi e^{-\frac{1}{2}\left[ \left( \frac{r \cos \theta + \psi}{2} \right)^2 + \left( \frac{\psi - r \cos \theta}{2} \right)^2 + \frac{r^2 \sin^2 \theta}{2} \right]} \\
+$$
+p(s) = \frac{1}{8\pi^{3/2}} \int_0^\infty dr r \delta(s - r) \int_0^{2\pi} d\theta \int_{-\infty}^\infty d\psi e^{-\frac{1}{2}\left[ \left( \frac{r \cos \theta + \psi}{2} \right)^2 + \left( \frac{\psi - r \cos \theta}{2} \right)^2 + \frac{r^2 \sin^2 \theta}{2} \right]} \\
 = \frac{\sqrt{4\pi s}}{8\pi^{3/2}} \int_0^{2\pi} d\theta e^{-\frac{s^2}{2}\left[ \frac{\cos^2 \theta}{2} + \frac{\sin^2 \theta}{2} \right]} 
-= \frac{s}{2}e^{-\frac{s^2}{4}}.$$
+= \frac{s}{2}e^{-\frac{s^2}{4}}
+$$

@@ -1,8 +1,7 @@
 ---
-title: Joint Probability Density Function (JPDF) 
+title: Joint Probability Density Function (JPDF) for Random Matrices
 date: 2024-04-06
 ---
-# Joint Probability Density Function (JPDF) for Random Matrices
 
 The Joint Probability Density Function (JPDF) is a fundamental concept in the study of random matrices, particularly in understanding the statistical properties of their eigenvalues. It describes how likely it is to find the eigenvalues of a random matrix within a particular range of values, providing insights into the distribution and correlation of these eigenvalues.
 
