@@ -83,11 +83,15 @@ for i in range(100000):
     eigen += list(eigvals(random_standard_normal_matrix(3,3)))
 </code></pre>
 <p>Plotting the distribution of the standard normal matrix, we get this.</p>
-<p><img src="../notesimg/image.png" alt="alt text"/></p>
+<p align="center" width="100%">
+<img width="65%" src="../assets/noteslinalg/image.png"/>
+</p>
 <p>Now, you can see something intresting here. We have <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord mathnormal">μ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span> distribution for this new distributions of eigen values.</p>
 <p>This is called the Wigner’s semi-circle law. The eigenvalues of a random matrix are distributed in a semi-circle. This is a very important property of the eigenvalues of a random matrix.</p>
-<p>Another important part is how do we compare two ensembles of matrices. This is done by calculating the graph above. But there is a problem. That is for <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></span> matrix. If we increase the size of the matrix <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span></span>, the graph will look different for the same distribution with the same mean and variance we get a wider graph
-<img src="../notesImg/image-2.png" alt="alt text"/></p>
+<p>Another important part is how do we compare two ensembles of matrices. This is done by calculating the graph above. But there is a problem. That is for <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></span> matrix. If we increase the size of the matrix <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span></span>, the graph will look different for the same distribution with the same mean and variance we get a wider graph</p>
+<p align="center" width="100%">
+<img width="65%" src="../assets/noteslinalg/image-2.png"/>
+</p>
 <p>To normalize this: we run the following code:</p>
 <pre><code>import numpy as np
 import matplotlib.pyplot as plt
@@ -111,16 +115,22 @@ plt.title('Comparison of Scaled Eigenvalue Densities')
 plt.show()
 </code></pre>
 <p>Before Normalization</p>
-<p><img src="../notesImg/image-4.png" alt="alt text"/></p>
+<p align="center" width="100%">
+<img width="65%" src="../assets/noteslinalg/image-4.png"/>
+</p>
 <p>After Normalization</p>
-<p><img src="../notesImg/image-3.png" alt="alt text"/></p>
+<p align="center" width="100%">
+<img width="65%" src="../assets/noteslinalg/image-3.png"/>
+</p>
 <p>Learn, the JPDF better here: <a href="../notes/jpdf" class="internal" data-slug="notes/jpdf">Joint Probability Density Function (JPDF) for Random Matrices</a></p>
 <p>There is an another intresting conclusion</p>
 <h6 id="wigners-surmise">Wigner’s Surmise<a aria-hidden="true" tabindex="-1" href="#wigners-surmise" class="internal"> §</a></h6>
 <p>Probability of sampling two eigenvalues ’very close’ to each other (s → 0) is very small. This delta for any two eigenvalues can be calculated by
 <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.501em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6954em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.156em;"><span style="top:-3.363em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1329em;"><span style="top:-2.656em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.2255em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.0484em;"><span style="top:-3.0484em;margin-right:0.1em;"><span class="pstrut" style="height:2.6444em;"></span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.344em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>Visual representation of this is as follows:
-<img src="../notesImg/image-1.png" alt="alt text"/></p>
+<p>Visual representation of this is as follows:</p>
+<p align="center" width="100%">
+<img width="65%" src="../assets/noteslinalg/image-1.png"/>
+</p>
 <p>take a more detailed view <a href="../notes/wigersurmise" class="internal" data-slug="notes/wigersurmise">Wigner’s Surmise</a></p>
 <p>The important (generic) feature is that the eigen vectors are not independent: their jpdf does not in general
 factorize. The most striking incarnation of this property is the so-called level repulsion (as in Wigner’s

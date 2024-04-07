@@ -149,7 +149,9 @@ for i in range(100000):
 ```
 Plotting the distribution of the standard normal matrix, we get this.
 
-![alt text](notesimg/image.png)
+<p align="center" width="100%">
+<img width="65%" src="assets/noteslinalg/image.png">
+</p>
 
 
 Now, you can see something intresting here. We have $N( \mu, \sigma^2)$ distribution for this new distributions of eigen values.
@@ -157,7 +159,10 @@ Now, you can see something intresting here. We have $N( \mu, \sigma^2)$ distribu
  This is called the Wigner's semi-circle law. The eigenvalues of a random matrix are distributed in a semi-circle. This is a very important property of the eigenvalues of a random matrix.
 
  Another important part is how do we compare two ensembles of matrices. This is done by calculating the graph above. But there is a problem. That is for $3 \times 3$ matrix. If we increase the size of the matrix $6 \times 6$, the graph will look different for the same distribution with the same mean and variance we get a wider graph 
- ![alt text](notesImg/image-2.png)
+
+<p align="center" width="100%">
+<img width="65%" src="assets/noteslinalg/image-2.png">
+</p>
 
 To normalize this: we run the following code:
 ```
@@ -187,14 +192,18 @@ plt.show()
 
 Before Normalization
 
-![alt text](notesImg/image-4.png)
-
-
+<p align="center" width="100%">
+<img width="65%" src="assets/noteslinalg/image-4.png">
+</p>
 
 
 After Normalization 
 
-![alt text](notesImg/image-3.png)
+
+
+<p align="center" width="100%">
+<img width="65%" src="assets/noteslinalg/image-3.png">
+</p>
 
 
 
@@ -210,7 +219,11 @@ Probability of sampling two eigenvalues ’very close’ to each other (s → 0)
 $$\frac{s}{2}e^{-\frac{s^2}{4}}$$ 
 
 Visual representation of this is as follows:
-![alt text](notesImg/image-1.png)
+
+
+<p align="center" width="100%">
+<img width="65%" src="assets/noteslinalg/image-1.png">
+</p>
 
 take a more detailed view [[wigersurmise|Wigner's Surmise]]
 

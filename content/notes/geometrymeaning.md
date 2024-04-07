@@ -73,7 +73,7 @@ AKA, partition space according to relational definitions only not to be recursiv
 
 This can be explained as dimensional and [meronomic difference](https://en.wikipedia.org/wiki/Meronomy). In smooth brain terms, representaion bad in hierarchical terms. **Dimension flatness**
 
-We can fix **representaion bad in hierarchical terms**. _These processes are tedious and as of march 2024, i have no seen any LM do this well._ Some possible academic solutions include:
+We can fix **representaion bad in hierarchical terms**. _These processes are tedious and as of march 2024, i have not seen any LM do this well._ Some possible academic solutions include:
 * [Poincaré Embeddings](https://arxiv.org/abs/1705.08039)
     * Map embeddings to piocaré space. Top points neat the center, go down the tree, place away from the center. Use 
     **Riemannian optimization** to optimize the embeddings.
@@ -135,12 +135,13 @@ It has been argued that the two poles of similarity and contiguity are fundament
 
 In mathematics, a Voronoi diagram is a partition of a plane into regions(tessellation) close to each of a given set of objects.  In the simplest case, these objects are just finitely many points in the plane. For each seed there is a corresponding region, called a Voronoi cell, consisting of all points of the plane closer to that seed than to any other. 
 
-[Extensible used in FAISS and other ANN search algorithms](https://github.com/facebookresearch/faiss/wiki/Faster-search)
+[Extensibly used in FAISS and other ANN search algorithms](https://github.com/facebookresearch/faiss/wiki/Faster-search)
 
 Example of a varonoi diagram:
 <p align="center" width="100%">
 <img width="65%" src="assets/notesimg/image-3.png">
 </p>
+
 > Computational representation of colour
 
 **The edjes are infinite lines here**. Assume top left point is $(0,0)$. Then the point are:
