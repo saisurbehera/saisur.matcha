@@ -5,3 +5,7 @@ tags:
   - evergreen
 enableToc: false
 ---
+
+Books i have read:
+
+* [[geometrymeaning|Geometry of Meaning by Peter Gardenfors]]

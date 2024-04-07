@@ -25,3 +25,12 @@ Meanwhile, take a look at my [[gallery|gallery]] of my favorite pictures and my 
 - [[evergreen|Evergreen]]: permanent, constantly growing
 
 <sup>Thank you [Ishan](https://www.ishan.coffee/) and [Wayne](https://yxzwayne.com/gaiaprime/) for the template</sup>
+
+
+#### Projects working concurrently
+
+- [[lighl16|Light L16 re-engineering]]
+- [[notes/linearalg| Linear Algebra recap specifically RMTs]]
+- [[notes/Transformers|Transformers]] from first-principles
+- AMZN KDD 2023 cup (currently 5th in the rankings :) 
+- [[notes/geometrymeaning|Geometry of Meaning by Peter Gardenfors]]

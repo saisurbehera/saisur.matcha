@@ -5,6 +5,6 @@ tags:
   - evergreen
 enableToc: false
 ---
-- Compressed sensing
-- Streaming and sketching algorithms
-- Nelson Elhage blog
+- Terreance Tao Blog
+- Dominic Cumming substack 
+- Grey Mirror ( haven't read in a year)

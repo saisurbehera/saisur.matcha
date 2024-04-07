@@ -1,9 +1,9 @@
 ---
 title: Wigner’s surmise
 date: 2024-04-06
+tags:
+  - seed
 ---
-
-
 
 Consider a 2 x 2 GOE matrix  $ H_s = \left( \begin{array}{cc}
 x_1 & x_3 \\

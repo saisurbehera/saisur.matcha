@@ -2,7 +2,7 @@
 title: Light L16 Re-engineering
 date: 2024-03-17
 tags:
-  - evergreen
+  - seed
 ---
 
 In early 2018, Light.co released a groundbreaking camera. It was claimed to be engineering marvel. It takes 16 different images and using [computational photogrammetry](https://www.asprs.org/wp-content/uploads/pers/1970journal/jun/1970_jun_567-569.pdf) combines the 16 different images into one. Unfortunately the cameras software was badly executed. In this blog post, we will think of ways to re-engineer the device and try to recreate the software using the same methods.

@@ -5,7 +5,9 @@ tags:
   - dreams
 enableToc: false
 ---
-Open ideas, if you would want to collaborate on any of these, please let me know.
+Open ideas, if you would want to collaborate on any of these, please let me know. I have done some progress in them but not detailed enoughs
+
+
 - Light L16 stiching algorithm
 	- Replace the method of laplacian blending with a more advanced method. Specifically try Alpha blending and cyclendrical blending
 - Automatic Minecraft Player and Crafter
@@ -18,3 +20,4 @@ Open ideas, if you would want to collaborate on any of these, please let me know
 	- 3D asset search is broken. It doesn't have any open source ranking algorithm.
 - RAG at scale 
 	- Problem: RAG doesn't scale well. The embeddings overlap and the search return non-relevant results 
+- 
