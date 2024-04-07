@@ -9,7 +9,7 @@ tags:
     <img width="55%" src="assets/notesimg/image.png">
 </p>
 
-In this book, we will be covering the main points of the book. 
+In this book, we will be covering the main points of the book. We will be drawing parallels between the cognitive interpretation and computational representation of language models. My aim here is to better understand representation learning in language models but from a cognitive science perspective.
 
 ## 1. Semantics as a meeting of minds 
 
