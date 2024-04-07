@@ -158,12 +158,34 @@ Now, you can see something intresting here. We have $N( \mu, \sigma^2)$ distribu
  ![alt text](image-2.png)
 
 To normalize this: we run the following code:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import gaussian_kde
 
+
+
+# Use Gaussian KDE to estimate the density of the scaled eigenvalues
+density_A = gaussian_kde(np.real(eigen1))
+density_B = gaussian_kde(np.real(eigen2))
+
+# Plot the densities
+x = np.linspace(min(np.real(eigen1).min(), np.real(eigen2).min()), 
+                max(np.real(eigen1).max(), np.real(eigen2).max()), 1000)
+plt.plot(x, density_A(x), label='Matrix A')
+plt.plot(x, density_B(x), label='Matrix B')
+plt.legend()
+plt.xlabel('Scaled Eigenvalue')
+plt.ylabel('Density')
+plt.title('Comparison of Scaled Eigenvalue Densities')
+plt.show()
+
+```
 
 Before Normalization
 ![alt text](image-4.png)
 
-Before 
+
 
 
 After Normalization 
