@@ -184,6 +184,7 @@ plt.show()
 
 
 Before Normalization
+
 ![alt text](image-4.png)
 
 

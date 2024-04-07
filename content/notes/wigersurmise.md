@@ -3,20 +3,18 @@ title: Wigner’s surmise
 date: 2024-04-06
 ---
 
-# Wigner’s surmise
 
 
-
-Consider a 2 x 2 GOE matrix \( H_s = \left( \begin{array}{cc}
+Consider a 2 x 2 GOE matrix  $ H_s = \left( \begin{array}{cc}
 x_1 & x_3 \\
 x_3 & x_2 \\
-\end{array} \right) \) with \( x_1, x_2 \sim \mathcal{N}(0, 1) \) and \( x_3 \sim \mathcal{N}(0, 1/2) \). What is the pdf \( \rho(s) \) of the spacing \( s = \lambda_2 - \lambda_1 \) between its two eigenvalues (\( \lambda_2 > \lambda_1 \))?
+\end{array}\right) $  with $ x_1, x_2 \sim \mathcal{N}(0, 1) $ and $ x_3 \sim \mathcal{N}(0, 1/2) $. What is the pdf \( \rho(s) \) of the spacing $ s = \lambda_2 - \lambda_1 $ between its two eigenvalues ($ \lambda_2 > \lambda_1 $)?
 
 The two eigenvalues are random variables, given in terms of the entries by the roots of the characteristic polynomial
 
 $$ \lambda^2 - \text{Tr}(H_s)\lambda + \text{det}(H_s), $$
 
-therefore \( \lambda_{1,2} = (x_1 + x_2 \pm \sqrt{(x_1 - x_2)^2 + 4x_3^2})/2 \) and \( s = \sqrt{(x_1 - x_2)^2 + 4x_3^2} \).
+Therefore $ \lambda_{1,2} = (x_1 + x_2 \pm \sqrt{(x_1 - x_2)^2 + 4x_3^2})/2  $ and $ s = \sqrt{(x_1 - x_2)^2 + 4x_3^2} $.
 
 By definition, we have
 
