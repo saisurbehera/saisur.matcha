@@ -22,7 +22,7 @@ class Layer:
         
 ```
 
-So the weight inialization is done by the zeros function and the forward pass is done by the inner product of the weight and the input plus the bias. The problem is the weight initialization is from the standard normal. 
+The forward pass is done by the inner product of the weight and the input plus the bias. The problem is the weight initialization is from the standard normal. 
 
 This is a problem because:
 * Vanishing Gradient Problem
