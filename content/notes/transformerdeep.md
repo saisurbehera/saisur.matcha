@@ -26,7 +26,8 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 * Dropout
 * Encoder
 * Decoder
-* Complete transformer
+* Transformer
+* Tokenizers
 
 ## Training
 * Optimizers
@@ -37,29 +38,21 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 
 ## Decoding
 * Beam search
+* Greedy search
+* Temperature sampling
 * Evaluation metrics
 
+>  I am speed. - Lightning McQueen
 
-
-* Layer Norm 
-* Attention
-* Self Attention
-* Multi Head attention 
-* Positional Encoding
-* Dropout 
-* Batch normalization
-* Activation functions
-* Optimizers
-* Loss functions
-* Encoders
-* Decoders
-* Embedding Layer
-* Positional Encoding
-* Regularization
-* Decoding 
-* Tokenizers
-* Weight decay
-* Learning rate schedulers
-* Masking
-* Beam search
-* Evaluation metrics
+### Deep Learning go brrrrrrr
+* Gradient Checkpointing
+* Mixed Precision Training
+* Distributed Training
+    * Model Parallelism
+    * Data Parallelism
+* Quantization
+* Pruning
+* Knowledge Distillation
+* Transfer Learning
+* Fine Tuning
+* Pretraining

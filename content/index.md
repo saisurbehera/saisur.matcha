@@ -31,6 +31,6 @@ Meanwhile, take a look at my [[gallery|gallery]] of my favorite pictures and my 
 
 - [[lighl16|Light L16 re-engineering]]
 - [[notes/linearalg| Linear Algebra recap specifically RMTs]]
-- [[notes/Transformers|Transformers]] from first-principles
+- [[notes/transformerdeep|Transformers]] from first-principles
 - AMZN KDD 2023 cup (currently 5th in the rankings :) 
 - [[notes/geometrymeaning|Geometry of Meaning by Peter Gardenfors]]
