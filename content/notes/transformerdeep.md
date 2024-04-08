@@ -1,6 +1,6 @@
 ---
 title: Transformers from first principles
-date: 2023-10-06
+date: 2024-04-07
 tags:
   - seed
 enableToc: false
