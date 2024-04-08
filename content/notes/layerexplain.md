@@ -104,13 +104,13 @@ class Layer:
     
     def __forward(self,x):
         output = np.inner(self.weight,x)
-        if sefl.bias is not None:
+        if self.bias is not None:
             return  output + self.bias
         return temp
     
     def __kaiming_init(self,M,N):
         std_dev = np.sqrt(2.0 / M)
-        return np.random.normal(0, std_dev, size=(input_dim, output_dim))
+        return np.random.normal(0, std_dev, size=(M, N))
      
 ```
 #### References:

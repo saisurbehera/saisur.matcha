@@ -2,7 +2,7 @@
 title: Transformers from first principles
 date: 2024-04-07
 tags:
-  - seed
+  - evergreen
 enableToc: false
 ---
 

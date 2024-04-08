@@ -1,6 +1,8 @@
 ---
 title: Gallery
 date: 2024-03-10
+tags:
+  - evergreen
 ---
 
 Collection of my favorite pictures
