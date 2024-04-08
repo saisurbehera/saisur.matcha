@@ -30,3 +30,5 @@ Transformers have been all the rage in the NLP community ever since [GPT-3](http
 ## Courses
 - [Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM) - Stanford CS25
 - [NLP with Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ) - Stanford CS224N
+
+Detailed understanding of the problem is in the [notes/transformerdeep](/notes/transformerdeep) page. 
