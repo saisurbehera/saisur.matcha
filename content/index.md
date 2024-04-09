@@ -33,4 +33,5 @@ Meanwhile, take a look at my [[gallery|gallery]] of my favorite pictures and my 
 - [[notes/linearalg| Linear Algebra recap specifically RMTs]]
 - [[notes/transformerdeep|Transformers]] from first-principles
 - AMZN KDD 2023 cup (currently 5th in the rankings :) 
+    - If you are interested in joining the team, please reach out to me. I have a couple of ideas related to RLHF here.
 - [[notes/geometrymeaning|Geometry of Meaning by Peter Gardenfors]]

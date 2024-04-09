@@ -56,3 +56,8 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 * Transfer Learning
 * Fine Tuning
 * Pretraining
+
+There are several topics which are required to have a basic **intution** about why is it learning. Here are some topics, I will be covering which go behind why does this blob of code learn:
+
+* [[notes/inftheory|Information Theory]]
+* [[notes/distribution|Distributions]]
