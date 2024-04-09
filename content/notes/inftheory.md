@@ -84,14 +84,6 @@ Convex functions: $f : S \to \mathbb{R}$ is:
 * Strictly Convex if $f(\alpha_1 x + \alpha_2 y) < \alpha_1 f(x) + \alpha_2 f(y)$ for all $x,y \in S$ and $0 \leq \alpha \leq 1$.
 * Strictly concave if $-f$ is strictly convex.
 
-## Convexity 
-
-Convex set is defined as the subset S of some vector space which is convex if $ x,y \in S \implies \lambda x + \alpha y \in S$ for all $0 \leq \lambda \leq 1$.
-
-Convex functions: $f : S \to \mathbb{R}$ is:
-* Convex if $f(\alpha_1 x + \alpha_2 y) \leq \alpha_1 f(x) + \alpha_2 f(y)$ for all $x,y \in S$ and $0 \leq \alpha \leq 1$.
-* Strictly Convex if $f(\alpha_1 x + \alpha_2 y) < \alpha_1 f(x) + \alpha_2 f(y)$ for all $x,y \in S$ and $0 \leq \alpha \leq 1$.
-* Strictly concave if $-f$ is strictly convex.
 
 ## Jensen's inequality
 
