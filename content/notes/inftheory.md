@@ -64,16 +64,73 @@ Let us assume, you are a weather outpost and you have to send an message to the 
 
 Mutual information is a measure of the amount of information that one random variable contains about another random variable. It is a measure of the reduction in uncertainty of one random variable due to the knowledge of another random variable.
 
+Geometric meaning: "mutual information as distance to product distributions"
+
 > You and your wife got a message, you have to respond together. Your message was 2 bits long and your wife's message was 3 bits long. sus. You notice that the message is similar. Being a nerd, you know that 0.75 bits is shared ( This is called mutual information). Now you both respond with 4.25 bits (This is the entropy). Both happy jpeg.
 
 Some properties of mutual information:
 * Symmetry: $I(X;Y) = I(Y;X)$
 * Non-negativity: $I(X;Y) \geq 0$
-* The amount of entropy reduction is the mutual information between the two random variables. $H(Y|X) - H(X|Y) = I(X;Y)$
+* The amount of entropy reduction is the mutual information between the two random variables. $H(Y|X) - H(X) = I(X;Y)$
 
-# THINGS TO BE ADDED ARE  Capacity = information radius,Extremization of mutual information for memoryless sources and channels, Information measures and probability of error, corresponding rates, optimal compressor, slepian worlf coding,  Compression with Side Information at both compressor and decompressor, arithmetic coding,Optimal compressors for a class of sources. Redundancy,Information Projection, sanoc theorem, energy per bit , normalized bit, lossy compression, scalar quantization, distortion, problems 
+Now, we have two cases where the mutual information:
+*  $P_{Y|X} → max( I(X;Y))$ is the capacity of the set of distributions
+*  $P_{X} → min( I(X;Y))$ is the lossy compression
 
-# Support 
+Now the natural question is, how do we maximize the capacity? The key point here is the data mirrors the prediction, we have no noise. Maximizing the capacity. From this, we can naturally say that a medium where we are receiving hardly any noise and maximizing the information, we are maximizing the capacity.
+
+Another intutive way to relate to ML is the difference between cross entropy to KL divergence. **Cross entropy is the average number of bits required to send a message, KL divergence is the number of bits saved if you know the distribution.**
+
+#### Data Processing Inequality
+
+
+**Post-processing cannot increase information**
+
+Data processing inequality is an information theoretic concept that states that the information content of a signal cannot be increased via a local physical operation. This can be reffered as the "intrinsic information" of the signal. It is not necessary, we are able to decipher the message, but the information content of the message is not changed. (Skill Issue)
+
+In real life, we come across multiple examples of the opposite. Data processing helps us to decipher the message. So post processing can "increase" the information content, but this is an miss-understanding. The information content of the message is not changed, but you ability to decipher the message is increased(skill issue). This is a change in a relative basis, not an absolute basis.
+
+If we have a basic markov chain, $ X \to Y \to Z$, i.e $Z$ and $Y$ contain the same information about $X$.
+
+$$ {\displaystyle I(X;Y)\geqslant I(X;Z),} $$
+
+A natural conclusion of this is noise inside a channel $P_{Y|Z}$ must reduce the information that Y carries about the data X, regardless of how smart the look up X → Y is.
+
+
+## Capacity = information radius
+
+
+
+## Extremization of mutual information for memoryless sources and channels
+
+## Information measures and probability of error, corresponding rates
+
+## Optimal compressor
+
+## Slepian worlf coding
+
+## Compression with Side Information at both compressor and decompressor
+
+## Arithmetic coding
+
+## Optimal compressors for a class of sources
+
+## Redundancy
+
+## Information Projection
+
+## Sanoc theorem
+
+## Energy per bit
+
+## Normalized bit
+
+## Lossy compression
+
+## Scalar quantization
+
+## Distortion problems
+
 
 ## Convexity 
 

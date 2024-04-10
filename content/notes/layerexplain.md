@@ -99,7 +99,7 @@ Summary:
 class Layer:
     
     def __init__(self,M,N, bias = None):
-        self.weight = self.kaiming_init(M,N)
+        self.weight = self.__kaiming_init(M,N)
         self.bias = bias if bias is not None else np.zeros(M)
     
     def __forward(self,x):

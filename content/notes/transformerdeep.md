@@ -31,7 +31,7 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 
 ## Training
 * Optimizers
-* Loss functions
+* [[notes/lossfunc|Loss functions]]
 * Regularization
 * Weight decay
 * Learning rate schedulers

@@ -35,3 +35,9 @@ Meanwhile, take a look at my [[gallery|gallery]] of my favorite pictures and my 
 - AMZN KDD 2023 cup (currently 5th in the rankings :) 
     - If you are interested in joining the team, please reach out to me. I have a couple of ideas related to RLHF here.
 - [[notes/geometrymeaning|Geometry of Meaning by Peter Gardenfors]]
+
+#### Upcoming projects
+
+* Recreate the seed finding algorithm for tall [cactus finding](https://github.com/KaptainWutax/Kaktoos/blob/master/kaktoos.cu) in Minecraft
+* Document the exploratory of voyager in minecraft and how it can be used 
+* Perlin Noise and how to make it more human like
