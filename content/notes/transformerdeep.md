@@ -13,7 +13,7 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 ## Architecture
 * [[notes/layerexplain|Layer]]
     * [[notes/layerexplain#Kaiming initialization |Kaiming Initialization]]
-* Feed Forward network 
+* [[notes/ff|Feed Forward network]]
 * Attention Block
 * Self Attention Block
 * Multi Head Attention Block
@@ -31,6 +31,7 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 
 ## Training
 * Optimizers
+  - Why adam takes into account the root mean and expected value of the divergece ? 
 * [[notes/lossfunc|Loss functions]]
 * Regularization
 * Weight decay
@@ -61,3 +62,4 @@ There are several topics which are required to have a basic **intution** about w
 
 * [[notes/inftheory|Information Theory]]
 * [[notes/distribution|Distributions]]
+* [[notes/compression|Compression]]

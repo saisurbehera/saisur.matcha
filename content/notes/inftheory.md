@@ -81,6 +81,8 @@ Now the natural question is, how do we maximize the capacity? The key point here
 
 Another intutive way to relate to ML is the difference between cross entropy to KL divergence. **Cross entropy is the average number of bits required to send a message, KL divergence is the number of bits saved if you know the distribution.**
 
+The mutual information can be understood as the expectation of the KL divergence.
+
 #### Data Processing Inequality
 
 
@@ -97,13 +99,76 @@ $$ {\displaystyle I(X;Y)\geqslant I(X;Z),} $$
 A natural conclusion of this is noise inside a channel $P_{Y|Z}$ must reduce the information that Y carries about the data X, regardless of how smart the look up X → Y is.
 
 
-## Capacity = information radius
+#### Capacity = information radius
+
+This is the maximum amount of information (usually measured in bits per second) that can be transmitted through a channel, given the limitations imposed by noise and other impairments. The formal definition of channel capacity $C$ is given by the maximum mutual information between the input and output of the channel.
+
+$$ C = \max_{P_{X}} I(X;Y) $$
+
+where $P_{X}$ is the input distribution of the channel and $I(X;Y)$ is the mutual information between the input and output of the channel. In summary what is a distribution that maximizes the mutual information between the input and output of the channel.
+
+Capacity can be thought as the radius of the set of distributions where distances are measured in terms of divergence. Another way to think about this is the radius of the small divergence ball that encompasses all distribution.
+
+Now, one natural question comes is for what input we get the maximum mutual information. A input distribution $P_x$ that results in the maximum mutual information between the input and output of the channel is called the *capacity achieving input distribution*.
+
+Some real life examples are:
+* **Binary Symmetric Channel (BSC)**: For a binary symmetric channel with bit-flip probability $p$, the capacity-achieving input distribution is when each input bit (0 or 1) is equally likely (i.e., each has a probability of 0.5). This maximizes the mutual information between the input and the output.
+* **Additive White Gaussian Noise (AWGN) Channel**: For an AWGN channel, where the noise added to the signal is Gaussian, the capacity-achieving input distribution is a Gaussian distribution. The mean and variance of this distribution depend on the power constraints of the channel.
+
+#### Shanon Limit 
+
+The Shannon limit is the theoretical maximum rate at which data can be transmitted over a communication channel without error. 
+
+$$ C = B \log_2(1 + \frac{S}{N}) $$
+
+where $C$ is the channel capacity, $B$ is the bandwidth of the channel, $S$ is the signal power, and $N$ is the noise power. This makes a lot of intutive sense, the more the bandwidth, the more the information that can be transmitted. The more the signal power, the more the "value" information that can be transmitted. The more the noise power, the less the "mutual" information that can be transmitted.
 
 
 
-## Extremization of mutual information for memoryless sources and channels
+## Products Channels and Sources
 
-## Information measures and probability of error, corresponding rates
+The distinction between the behavior of mutual information in a system with a **product channel** and one with a **product source** reflects fundamentally different aspects of how information is processed and transmitted in information systems. To explore this, let's differentiate the concepts and contextualize their implications in terms of information theory.
+
+### Product Channel
+
+A **product channel** consists of multiple independent sub-channels where the input \(X\) can be split into separate components \(X_1, X_2, \dots, X_n\) that are transmitted independently through respective sub-channels to outputs \(Y_1, Y_2, \dots, Y_n\). The key property here is that each sub-channel functions independently of the others, leading to the mutual information between the overall input and output being the sum of the mutual information of the individual pairs:
+
+\[ I(X; Y) = I(X_1; Y_1) + I(X_2; Y_2) + \dots + I(X_n; Y_n) \]
+
+This setup maximizes the overall mutual information by maximizing each component independently, reflecting an optimal use of the channel capacity without interference.
+
+### Product Source
+
+A **product source**, on the other hand, refers to a scenario where the source itself produces outputs that are statistically independent across its components. Here, \(X = (X_1, X_2, \dots, X_n)\) is such that each component \(X_i\) is generated independently of the others. The key focus for a product source relates to how the source's independence properties influence the design and choice of the channel for minimizing mutual information, particularly in contexts like privacy, security, or noise minimization.
+
+### Mutual Information Minimization in Product Source
+
+When it comes to a product source, the goal might shift towards minimizing mutual information for various reasons, such as ensuring privacy or reducing predictability of the transmitted information from the observed output. The statement, "For a product source, the MI-minimizing channel is a product channel," implies that:
+
+1. **Preservation of Independence**: Using a product channel maintains the independence of the components of the input in the output. Since each \(X_i\) is processed independently, the outputs \(Y_i\) derived from them through the channel do not introduce any new dependencies among the components. This is crucial in scenarios where the addition of inter-component dependencies could inadvertently increase mutual information.
+
+2. **Channel Design**: If the objective is to minimize mutual information (perhaps to obscure the data or protect privacy), designing the channel such that it respects the independence of the source components and does not allow for cross-channel influences is vital. This could mean, for example, using noise addition or other transformations that treat each \(X_i\) independently, thus ensuring that any information leaked through the channel does not compound through interactions between different components.
+
+### Practical Example
+
+In a security-sensitive communication system, suppose a device sends multiple types of data (e.g., location, temperature, user activity) separately. If privacy is a concern, designing the transmission channel to treat each type of data independently (product channel) ensures that an eavesdropper learning about one type of data (say, temperature) gains no information about the other types (like location or activity), thus minimizing the total mutual information leakage across these diverse data streams.
+
+In summary, while the product channel maximizes mutual information by exploiting independence to enhance channel capacity, a product source paired with a product channel can be used strategically to minimize mutual information, thereby reducing the amount of information an eavesdropper can infer about the original source data from the channel output. This dual approach highlights the adaptability of information theory principles across different objectives—maximizing capacity or preserving privacy.
+
+## Entropy rate
+
+The entropy rate is a concept in information theory that measures the average amount of information produced by a stochastic process per time unit. It is often used in the context of random processes or time series data, where the values are not identically distributed or there are dependencies between successive observations.
+
+For a stochastic process \(X_t\) where \(t\) represents discrete time steps, the entropy rate \(H(X)\) is defined as the limit of the avergae entropy of the first n random variables divided by n as n approaches infinity:
+
+$$ H(X) = \lim_{n \to \infty} \frac{1}{n} H(X_1, X_2, \dots, X_n) $$
+
+The entropy rate for vareity of processes:
+* Independent Identically Distributed (IID) Process: If $X_i$ are IID, the entropy rate is the same as the entropy of a single random variable.
+* Markov Process: For a Markov process, where the next state depends only on the current state (not on the history), the entropy rate is the entropy of the next state given the current state once the process has reached its steady-state distribution.
+* Ergodic Process: For an ergodic process, the entropy rate can be calculated by considering a long sequence from a single sample path, as it will converge to the same value as the average over many sample paths.
+
+[[notes/compression|Compression]]
 
 ## Optimal compressor
 
@@ -130,6 +195,7 @@ A natural conclusion of this is noise inside a channel $P_{Y|Z}$ must reduce the
 ## Scalar quantization
 
 ## Distortion problems
+
 
 
 ## Convexity 
