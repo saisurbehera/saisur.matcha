@@ -113,6 +113,9 @@ class Layer:
         return np.random.normal(0, std_dev, size=(M, N))
      
 ```
+
+*This explanation assumes that we are using vanilla neural networks with no normalization. The value of initialization techniques gets lost when we use batch normalization or layer normalization.*
+
 #### References:
 
 * [Understanding the difficulty of training deep feedforward neural networks](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)

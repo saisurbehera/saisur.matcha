@@ -20,7 +20,7 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 * Embedding Layer
 * Positional Encoding
 * Layer normalization
-* Batch normalization
+* [[notes/batchnorm|Batch normalization]]
 * Activation functions
 * Masking
 * Dropout

@@ -2,7 +2,8 @@
 title: Linear Algebra study
 date: 2024-04-06
 tags:
-  - sapling
+  - seed
+enableToc: false
 ---
 
 # Linear Algebra study

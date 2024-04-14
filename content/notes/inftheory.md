@@ -131,23 +131,23 @@ The distinction between the behavior of mutual information in a system with a **
 
 ### Product Channel
 
-A **product channel** consists of multiple independent sub-channels where the input \(X\) can be split into separate components \(X_1, X_2, \dots, X_n\) that are transmitted independently through respective sub-channels to outputs \(Y_1, Y_2, \dots, Y_n\). The key property here is that each sub-channel functions independently of the others, leading to the mutual information between the overall input and output being the sum of the mutual information of the individual pairs:
+A **product channel** consists of multiple independent sub-channels where the input $X$ can be split into separate components $X_1, X_2, \dots, X_n$ that are transmitted independently through respective sub-channels to outputs $Y_1, Y_2, \dots, Y_n$. The key property here is that each sub-channel functions independently of the others, leading to the mutual information between the overall input and output being the sum of the mutual information of the individual pairs:
 
-\[ I(X; Y) = I(X_1; Y_1) + I(X_2; Y_2) + \dots + I(X_n; Y_n) \]
+$$ I(X; Y) = I(X_1; Y_1) + I(X_2; Y_2) + \dots + I(X_n; Y_n) $$
 
 This setup maximizes the overall mutual information by maximizing each component independently, reflecting an optimal use of the channel capacity without interference.
 
 ### Product Source
 
-A **product source**, on the other hand, refers to a scenario where the source itself produces outputs that are statistically independent across its components. Here, \(X = (X_1, X_2, \dots, X_n)\) is such that each component \(X_i\) is generated independently of the others. The key focus for a product source relates to how the source's independence properties influence the design and choice of the channel for minimizing mutual information, particularly in contexts like privacy, security, or noise minimization.
+A **product source**, on the other hand, refers to a scenario where the source itself produces outputs that are statistically independent across its components. Here, $X = (X_1, X_2, \dots, X_n)$ is such that each component $X_i$ is generated independently of the others. The key focus for a product source relates to how the source's independence properties influence the design and choice of the channel for minimizing mutual information, particularly in contexts like privacy, security, or noise minimization.
 
 ### Mutual Information Minimization in Product Source
 
 When it comes to a product source, the goal might shift towards minimizing mutual information for various reasons, such as ensuring privacy or reducing predictability of the transmitted information from the observed output. The statement, "For a product source, the MI-minimizing channel is a product channel," implies that:
 
-1. **Preservation of Independence**: Using a product channel maintains the independence of the components of the input in the output. Since each \(X_i\) is processed independently, the outputs \(Y_i\) derived from them through the channel do not introduce any new dependencies among the components. This is crucial in scenarios where the addition of inter-component dependencies could inadvertently increase mutual information.
+1. **Preservation of Independence**: Using a product channel maintains the independence of the components of the input in the output. Since each $X_i$ is processed independently, the outputs $Y_i$ derived from them through the channel do not introduce any new dependencies among the components. This is crucial in scenarios where the addition of inter-component dependencies could inadvertently increase mutual information.
 
-2. **Channel Design**: If the objective is to minimize mutual information (perhaps to obscure the data or protect privacy), designing the channel such that it respects the independence of the source components and does not allow for cross-channel influences is vital. This could mean, for example, using noise addition or other transformations that treat each \(X_i\) independently, thus ensuring that any information leaked through the channel does not compound through interactions between different components.
+2. **Channel Design**: If the objective is to minimize mutual information (perhaps to obscure the data or protect privacy), designing the channel such that it respects the independence of the source components and does not allow for cross-channel influences is vital. This could mean, for example, using noise addition or other transformations that treat each $X_i$ independently, thus ensuring that any information leaked through the channel does not compound through interactions between different components.
 
 ### Practical Example
 
@@ -159,7 +159,7 @@ In summary, while the product channel maximizes mutual information by exploiting
 
 The entropy rate is a concept in information theory that measures the average amount of information produced by a stochastic process per time unit. It is often used in the context of random processes or time series data, where the values are not identically distributed or there are dependencies between successive observations.
 
-For a stochastic process \(X_t\) where \(t\) represents discrete time steps, the entropy rate \(H(X)\) is defined as the limit of the avergae entropy of the first n random variables divided by n as n approaches infinity:
+For a stochastic process $X_t$ where $t$ represents discrete time steps, the entropy rate $H(X)$ is defined as the limit of the avergae entropy of the first n random variables divided by n as n approaches infinity:
 
 $$ H(X) = \lim_{n \to \infty} \frac{1}{n} H(X_1, X_2, \dots, X_n) $$
 

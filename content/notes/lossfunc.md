@@ -6,6 +6,7 @@ tags:
 enableToc: false
 ---
 
+
 ## Cross-Entropy
 
 Cross-entropy measures the average number of bits needed to encode data from one distribution (the true distribution) using the wrong distribution (the model distribution). It's used frequently in machine learning to quantify the difference between the true distribution of the data and the predictions made by a model. The definition of cross-entropy between two distribution $p$ and $q$ is given by:
