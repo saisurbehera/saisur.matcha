@@ -6,6 +6,10 @@ tags:
 enableToc: false
 ---
 
-Books i have read:
+## Some pages of books
 
 * [[geometrymeaning|Geometry of Meaning by Peter Gardenfors]]
+
+
+
+

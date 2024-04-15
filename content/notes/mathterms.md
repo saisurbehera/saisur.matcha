@@ -15,3 +15,9 @@ Given two metric spaces $(X, d_X)$ and $(Y, d_Y)$, a function $f: X \rightarrow 
 Any such $K$ is called a Lipschitz constant for the function $f$. The smallest constant $K$ for which the inequality holds is called the Lipschitz constant of $f$.
 
 Think of a double cone, where the slope of the cone is the Lipschitz constant. The function is Lipschitz continuous if the slope of the cone is bounded.
+
+## Krylov subspace
+
+Given a matrix $A \in \mathbb{R}^{n \times n}$ and a vector $b \in \mathbb{R}^n$, the Krylov subspace of order $m$ is defined as:
+
+$$ \mathcal{K}_m(A, b) = \text{span}\{b, Ab, A^2b, \ldots, A^{m-1}b\} $$

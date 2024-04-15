@@ -68,7 +68,7 @@ Since, we now know any NN are universal approximaters. We can safely assume that
 If labels of image classification dataset are randomly shuffled, the university principle of NN can still acheive net zero training loss. This doesn't change with any degree of regularization. 
 
 
-##### Add points regularization is a not always the right answer
+##### Regularization is a not always the right answer
 
 Regularization is a common technique to prevent overfitting. However, it is works [very differently in the context of neural networks](https://arxiv.org/pdf/1611.03530.pdf). In contrast to traditional methods, regularization in neural networks acts as a tuning paramter that helps improve the test error. No single regularization seems to be critical independent of other terms. Thus, it is unlikely that regularizers are the fundamental reason for generalization.
 
@@ -76,13 +76,23 @@ Regularization is a common technique to prevent overfitting. However, it is work
     <img width="105%" src="assets/notesimg/image_reg.png">
 </p>
 
-#### there is always a subset of dimensions containing paths to leave local optima and keep on exploring.
+#### Just move bro 
 
-##### All activations are not the same 
+Considering a neural network with a great number of parameters, forming a high-dimensional parameter space, when learning happens on this high-dimensional objective landscape. The shape of the parameter space manifold is critical. For example, from the [[notes/batchnorm|Batch Normalizations]] page, we can clearly see that a smoother manifold is benficial for optimization. It allows us to have more predictive gradients and larger learning rates. 
+
+Even though the parameter space is huge, fortunately we don’t have to worry too much about the optimization process getting stuck in local optima, as it has been shown that local optimal points in the objective landscape almost always lay in saddle-points rather than valleys. In other words, there is always a some dimensions containing paths to leave local optima and keep on exploring. As they say *Just move bro*. 
+
+There is some mindblowing math here specifically related to saddle points. Just to summarize:
+* Critical points concentrate along a monotonically increasing curve in the $\epsilon - \alpha$ plane.
+* Eigenvalues do not seem to be exactly distributed according to the semicircular law, their distribution does shift to the left as the error increases
+* A plateau around any critical point of the error function of a neural network.
+* A trust region approach is a practical way to escape saddle points. This is done by making all the eigenvalues of the Hessian positive  by adding a term $\alpha$ to the diagonal of the Hessian matrix. Rescale the gradient by the inverse of the modified eigenvalyes ( decrease the step size in general). To ensure descent along every eigen-directions, one must increase $\alpha$ until all the eigenvalues are positive. 
+
+
+
 
 #### Heterogeneous Layer Robustness
 
-#### Layers are not Created Equal
 
 #### Lottery ticket 
 
@@ -96,4 +106,4 @@ Regularization is a common technique to prevent overfitting. However, it is work
 
 #### Linearized NTK
 
-#### Lazy trainign 
+#### Lazy training
