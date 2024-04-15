@@ -31,6 +31,10 @@ enableToc: false
 * The Recursive Mind: The Origins of Human Language, Thought, and Civilization by Michael C. Corballis
 * Introduction of artificial life by Christoph Adami
 
+## Paper Backlog
+
+* [Understanding latency hiding on GPUs](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-143.pdf)
+
 ## Learning topics 
 
 * [Lapack](https://www.netlib.org/lapack/lug/node29.html)

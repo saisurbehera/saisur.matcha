@@ -87,7 +87,7 @@ There is some mindblowing math here specifically related to saddle points. Just 
 * Eigenvalues do not seem to be exactly distributed according to the semicircular law, their distribution does shift to the left as the error increases
 * A plateau around any critical point of the error function of a neural network.
 * A trust region approach is a practical way to escape saddle points. This is done by making all the eigenvalues of the Hessian positive  by adding a term $\alpha$ to the diagonal of the Hessian matrix. Rescale the gradient by the inverse of the modified eigenvalyes ( decrease the step size in general). To ensure descent along every eigen-directions, one must increase $\alpha$ until all the eigenvalues are positive. 
-
+* 
 
 
 

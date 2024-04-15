@@ -5,6 +5,8 @@ tags:
   - sapling
 enableToc: true
 ---
+
+#### Borrowed from Ishan's blog post
 Foundation Models
 * [OpenAI](https://openai.com/)
 - [Anthropic](https://www.anthropic.com/)
