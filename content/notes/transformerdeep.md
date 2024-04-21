@@ -30,7 +30,7 @@ Subcomponents of the transformer which need to be coded out in seperate sections
 * Tokenizers
 
 ## Training
-* Optimizers
+* [[notes/optimizers||Optimizers]]
   - Why adam takes into account the root mean and expected value of the divergece ? 
 * [[notes/lossfunc|Loss functions]]
 * Regularization

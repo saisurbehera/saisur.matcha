@@ -1,6 +1,8 @@
 ---
 title: Distance Metrics
 date: 2024-04-06
+tags:
+  - sapling
 ---
 
 ## Hellinger Distance

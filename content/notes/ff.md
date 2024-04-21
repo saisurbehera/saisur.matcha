@@ -87,9 +87,21 @@ There is some mindblowing math here specifically related to saddle points. Just 
 * Eigenvalues do not seem to be exactly distributed according to the semicircular law, their distribution does shift to the left as the error increases
 * A plateau around any critical point of the error function of a neural network.
 * A trust region approach is a practical way to escape saddle points. This is done by making all the eigenvalues of the Hessian positive  by adding a term $\alpha$ to the diagonal of the Hessian matrix. Rescale the gradient by the inverse of the modified eigenvalyes ( decrease the step size in general). To ensure descent along every eigen-directions, one must increase $\alpha$ until all the eigenvalues are positive. 
-* 
 
 
+
+<!-- 
+Over parameterization is a technique to increase the number of parameters in a model. In the case where we have $m$ parameters and $n$ samples. If $m > n$, the model is said to be over-parameterized. 
+ -->
+
+
+Deep networks perform 
+
+### Classic difference between NN and traditional ML
+
+<p align="center" width="100%">
+    <img width="105%" src="assets/notesimg/new_overfitting.png">
+</p>
 
 #### Heterogeneous Layer Robustness
 
@@ -107,3 +119,7 @@ There is some mindblowing math here specifically related to saddle points. Just 
 #### Linearized NTK
 
 #### Lazy training
+
+## References:
+
+Source: [1 1/2 lessons of deep learning](https://www.youtube.com/watch?v=0xG4dVU1ZT4&ab_channel=MITCBMM)
