@@ -40,6 +40,7 @@ enableToc: false
 * [Lapack](https://www.netlib.org/lapack/lug/node29.html)
 * Cobordism
 * Carnap’s Vision of Language
+* [Matrix Multiplication on CPU](https://marek.ai/matrix-multiplication-on-cpu.html)
 
 ## Paper Backlog
 

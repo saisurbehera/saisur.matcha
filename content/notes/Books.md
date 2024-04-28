@@ -10,6 +10,8 @@ enableToc: false
 
 * [[geometrymeaning|Geometry of Meaning by Peter Gardenfors]]
 
+<!-- * [[geometrymeaning|Geometry of Meaning by Peter Gardenfors]] -->
+
 
 
 

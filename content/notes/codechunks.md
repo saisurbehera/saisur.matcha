@@ -80,3 +80,48 @@ for size in range(1,1000):
             print(f'Mean Squared Error on Test Set: {total_loss / len(test_loader):.4f}')
     results.append(model(x).squeeze().detach().numpy())
     ```
+
+## MNIST Model code 
+
+```
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+
+gelu = nn.GELU()
+
+class MNISTNet(nn.Module):
+    def __init__(self):
+      super(MNISTNet, self).__init__()
+      self.conv1 = nn.Conv2d(1, 15, kernel_size=5)
+      self.conv2 = nn.Conv2d(15, 20, kernel_size=5)
+      self.conv2_drop = nn.Dropout2d()
+      self.fc1 = nn.Linear(320, 100)
+      self.fc1_drop = nn.Dropout()
+      self.fc2 = nn.Linear(100, 10)
+    
+    def forward(self, x):
+      # First Loop
+      x = self.conv1(x)
+      x = F.max_pool2d(x, 2)
+      x = gelu(x)
+
+      # Second Loop
+      x = self.conv2(x)
+      x = F.max_pool2d(x, 2)
+      x = gelu(x)
+      
+      x = self.conv2_drop(x)
+
+      # Flatten
+      x = x.view(-1, 320)
+
+      #MLP 
+      x = self.fc1(x)
+      x = gelu(x)
+      x = self.fc1_drop(x)
+
+      # second layer
+      x = self.fc2(x)
+      return F.log_softmax(x, dim=1)
+```

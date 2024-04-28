@@ -10,6 +10,8 @@ enableToc: false
 
 # Risk and Complexity
 
+### Vapnik–Chervonenkis dimension
+
 # Bias-Variance Tradeoff
 
 

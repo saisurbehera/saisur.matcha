@@ -33,3 +33,7 @@ where $f(x)$ is the function value at $x$, $f(x^*)$ is the minimum value of the 
 **This can also translate to if the magnitude of the gradient of the loss function is greater than constant times the loss function, we have exponential convergence of gradients.**
 
 We care about a more simpler version of this inequality, the minimum value of the function is hard to guess, so we forget about the $f(x^*)$ term. We first prove this simpler form of the inequality and then we will see how it can be used to prove the convergence of optimization algorithms.
+
+## Generalization Error Bound
+
+## Rademacher Complexity
