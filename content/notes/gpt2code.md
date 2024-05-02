@@ -1,6 +1,6 @@
 ---
 title: GPT2 Implementation
-date: 2024-03-17
+date: 2024-05-02
 ---
 
 ## Layer Norm Code
