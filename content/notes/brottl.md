@@ -1,4 +1,8 @@
-## Brotli Compression 
+---
+title: Brotli Compression 
+date: 2024-05-09
+---
+
 
 
 ## Parts of the paper
