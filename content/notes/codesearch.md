@@ -61,3 +61,11 @@ I would recommend focusing on Math based papers especially the ones which work w
 * [Baldur](https://arxiv.org/pdf/2303.04910)
 
 *Personal opinion: program synthesis is a more of a engineering problem than a research problem. You have to rely more on the search part of symbolic execution. Be very doubtfull of papers whose results look abnormally great, most of the times the sheer inference compute is not shared*
+
+Random stuff i shared in the past:
+
+Too lazy to write a proper list, but here are some papers that i found interesting:
+* https://arxiv.org/pdf/2308.03109
+* https://arxiv.org/pdf/2402.14658
+* https://arxiv.org/pdf/2401.03003
+* https://arxiv.org/pdf/2405.15793
