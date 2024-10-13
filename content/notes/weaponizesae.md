@@ -1,5 +1,5 @@
 ---
-title: The Ouroboros of AI
+title: Weaponizing SAEs
 date: 2024-10-11
 tags:
   - evergreen
@@ -21,18 +21,15 @@ Imagine, if you will, a more conniving, unethical version of myself. This digita
 
 Armed with this new knowledge, our nefarious alter ego sets out to manipulate these AI systems, weaving an intricate web of deception. Their goal? To bend the very fabric of artificial intelligence to their will, creating a puppet show where both the AI and unsuspecting users dance to their malevolent tune. He doesn't recognize the irony of his actions or the slow descent to his madness of his own making. 
 
-Now imagine how he would do it.
-
-## 
-
-I could tell you this offers a way to guide AI agents to be moral and ethical. I could tell you this is compute efficent way to effectively fine tune your models. I could also tell you that this can be precisely used to understand when the model is being deceptive or how very harmful behavior can be stopped. 
-
-<p align="center" width="100%">
-    <img width="105%" src="assets/notesimg/bart.png">
+<p align="center" width="10%">
+    <img width="100%" src="assets/notesimg/96k1hf.jpg">
 </p>
-> Ripped the meme from @bycloyd 
+
+Before we imagine how he would do it , let us understand the basics.
 
 ## Background
+
+### Steer Vectors
 
 ### SAE
 
@@ -44,12 +41,26 @@ I could tell you this offers a way to guide AI agents to be moral and ethical. I
 
 ### Dictionary Learning
 
-## Mock 
+## Experimentation
 
+### Steering vectors 
+
+https://vgel.me/posts/representation-engineering/
+
+### SAE 
+
+
+
+## Memes
+
+<p align="center" width="10%">
+    <img width="50%" src="assets/notesimg/bart.png">
+</p>
+> Ripped the meme from @bycloyd 
 
 
 ## Personal take
 
-This post is a way to think about the implications of this finding and what is means for the future of these systems. Personally, I believe these tools can change the way we interact with these systems but givens it power, it can be used to do anything. I will be going after a use-case where a conniving-unethical version of myself will be using these tools to steer the model to effectively deceive the model and users. 
+This post is a way to think about the implications of this finding and what is means for the future of these systems. Personally, I believe these tools can change the way we interact with these systems but givens it power, it can be used to do anything. As someone who works in E-commerce materialism does pervade my judgement. 
 
 *Warning: This post is a case study of one possible way how LLMs can be monetized by advertising*
