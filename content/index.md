@@ -10,7 +10,7 @@ enableToc: false
     <img width="105%" src="assets/bladerunner.webp">
 </p>
 
-Welcome to my blog, I will mainly talk about the NLP, Complexity theory, re-engineering products, modern-day Hindutva's deontological ethics, lack of meaning in a world approaching AGI and computational search problems.
+Welcome to my blog, I will mainly talk about the NLP, Complexity theory, re-engineering products, lack of meaning in a world approaching AGI and computational search problems.
 
 Embark on this voyage with me as we seek to discover our unique silhouettes in a world that often feels devoid of true significance. Hope you leave my blog with a sense of meaning and a little bit of inspiration.
 
